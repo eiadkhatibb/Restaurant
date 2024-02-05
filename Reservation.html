@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Reservation </title>
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+        background-image: url('images/aljawad-menu-bg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      
+      body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(255, 30, 30);
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(255, 30, 30);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+      
+      </style>
+</head>
+<body>
+    <ul>
+        <li><img align='center' src="images/Logo.png" width="45" height="45"/></li>
+        <li><a class="active" href="Home.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Locations.html">Locations</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+       <li> <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> </li>
+       <li>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+       </li>
+      </ul>
+
+      <form style="max-width:500px;margin:auto" style="background-color:white" >
+        <h2 style="color: white;">Reserve a Table</h2>
+        <p style="color: white;">Here you can reserve a table at AL-JAWAD Restaurant.<br>
+            <br>
+            To avoid disappointment:if you want to reserve a table witihn 24 hours,please don't use this form as we might not be able to reply in time.Instead,contact us by telephone<span style="color: red;"><a href="tel:+9617345766">CLICK TO CALL</a></span> drop by.
+        </p>
+        <div class="input-container">
+          <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        </div>
+        
+        <div class="input-container">
+          <input class="input-field" type="tel" placeholder=" Phone" name="psw">
+        </div>
+        <P style="color: white;">I would like to reserve a table at the following day and time:</P>
+        <div class="input-container">
+
+            <input class="input-field" type="date" name="psw">
+          </div>
+
+          <div class="input-container">
+            
+            <input class="input-field" type="time" name="psw">
+          </div>
+          <p style="color: white;">I would like a table</p>
+
+      <div>
+            
+            <input type="radio" name="psw">Outside
+          </div>
+          <div>
+            
+            <input  type="radio" name="psw">Inside
+          </div>
+          <div >
+            
+            <input type="radio" name="psw">Dosen't Matter
+          </div>
+        
+        <p style="color: white;">How many persons?</p>
+        <div >
+            <select>
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                </select>
+          </div>
+        <h6 style="color: white;"><small>please enter a value between 1 and 10</small></h6>
+        <p style="color: white;">Additional Comments:</p>
+        <div class="input-container">
+            <textarea  class="input padding-16 border" 
+      name="content" id="content" placeholder="Enter Here" class="input-field" cols="60" rows="6"></textarea>
+
+          </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </script>
+   
+    <footer class="container padding-32 theme-d1 center">
+      <h4><b>Follow Us</b></h4>
+      <a class="button large red" href="https://www.facebook.com/aljawadlb/" title="Facebook"><i class="fa fa-facebook"></i></a>
+      <a class="button large red" href="https://www.twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+      <a class="button large red" href="https://www.google.com" title="Google +"><i class="fa fa-google-plus"></i></a>
+      <a class="button large red" href="https://instagram.com/aljawadrestaurant?utm_medium=copy_link" title="Instagram"><i class="fa fa-instagram"></i></a>
+      <h6>Made by Arwa, Eiad</h6>
+    </footer>
+    
+    </body>
+    </html>
